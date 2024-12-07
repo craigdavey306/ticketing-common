@@ -13,7 +13,7 @@ export abstract class Listener<T extends Event> {
   abstract subject: T['subject'];
   abstract queueGroupName: string;
   abstract onMessage(data: T['data'], message: Message): void;
-  private client: Stan;
+  protected client: Stan;
   /** Number of seconds to wait for the acknowledgement. */
   protected ackWait = 5 * 1000; // 5 seconds
 
