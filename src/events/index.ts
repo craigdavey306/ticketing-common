@@ -1,3 +1,4 @@
+export * from './expiration-complete-event';
 export * from './listener';
 export * from './order-cancelled-event';
 export * from './order-created-event';
